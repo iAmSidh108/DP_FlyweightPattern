@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 905708486323788431}
   - component: {fileID: 4930325295798740166}
   - component: {fileID: 751130822133258464}
-  - component: {fileID: 8143164929524381327}
   - component: {fileID: 7896007067212352311}
   m_Layer: 0
   m_Name: Fireball
@@ -85,19 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8143164929524381327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4442122945406157716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 027a6cd323beb51409db8cf949e38c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 5, y: 0, z: 0}
 --- !u!135 &7896007067212352311
 SphereCollider:
   m_ObjectHideFlags: 0
