@@ -22,5 +22,8 @@ public class FlyweightSettings : ScriptableObject
         return flyweight;
     }
 
-    
+    public void OnGet(Flyweight f) =>f.gameObject.SetActive(true);
+    public void OnRelease(Flyweight f) => f.gameObject.SetActive(false); 
+
+    public void OnDestroyPoolObject(Flyweight f) => Destroy(f.gameObject); 
 }

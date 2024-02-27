@@ -10,19 +10,18 @@ public class Hero : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            var flyweight = flyweights[0].Create();
+            var flyweight = FlyweightFactory.Spawn(flyweights[0]);
             flyweight.transform.position = transform.position;
             flyweight.transform.rotation = transform.rotation;
-            flyweight.gameObject.SetActive(true);
             
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            var flyweight = flyweights[1].Create();
+            var flyweight = FlyweightFactory.Spawn(flyweights[1]);
             flyweight.transform.position = transform.position;
             flyweight.transform.rotation = transform.rotation;
-            flyweight.gameObject.SetActive(true);
+            
         }
 
 

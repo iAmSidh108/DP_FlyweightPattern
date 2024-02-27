@@ -20,6 +20,6 @@ public class Flyweight : MonoBehaviour
     IEnumerator DespawnAfterDelay(float delay)
     {
         yield return Helpers.GetWaitForSeconds(delay);
-        Destroy(gameObject);
+        FlyweightFactory.ReturnToPool(this);
     }
 }
