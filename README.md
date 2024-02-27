@@ -1,8 +1,13 @@
 # **Flyweight Pattern in Unity:**
 
+
+
 ## **What is the Flyweight Pattern?**
 
 The Flyweight Pattern is a structural design pattern that focuses on optimizing memory usage or computational efficiency by sharing objects, reducing redundancy, and making objects more lightweight. It achieves this by separating intrinsic and extrinsic state, where intrinsic state is shared among multiple objects, and extrinsic state is stored separately.
+
+## What is a Flyweight?
+   An object that only stores the intrinsic state is called a flyweight.
 
 ![image](https://github.com/iAmSidh108/DP_FlyweightPattern/assets/63715240/d26150f2-59f0-4d6a-8009-dcd041437311)
 
