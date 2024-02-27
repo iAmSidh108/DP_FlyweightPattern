@@ -5,8 +5,8 @@ using UnityEngine;
 public class CreateWorldPrefab : MonoBehaviour
 {
 
-    public int width;
-    public int depth;
+    public int width=20;
+    public int depth=20;
     public GameObject cube;
     
     void Start()
