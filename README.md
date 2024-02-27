@@ -57,4 +57,34 @@ Consider a text editor where each character in a document is represented as an i
 
 ## How I implemented this pattern in the project.
 
-Will be added soon once complete
+First i created the spawner script for Keypad 1 and 2 with 2 different prefabs.
+
+### Here we have a list of gameObjects that we want to spawn and then set to spawn with Keypad 1 and 2. But this is not optimized.
+
+![image](https://github.com/iAmSidh108/DP_FlyweightPattern/assets/63715240/cfbc65b5-545b-4243-80bf-29f4e7859803)
+
+
+### This is a FlyWeight script where we define intrinsic state with a scriptable object called FlyweightSettings.cs
+
+![image](https://github.com/iAmSidh108/DP_FlyweightPattern/assets/63715240/ae6a8dd6-fb3d-4438-a6b4-84351b2670c7)
+
+### This is the scriptable object with all the details of the flyweight and these will remain same with all the instances.
+
+![image](https://github.com/iAmSidh108/DP_FlyweightPattern/assets/63715240/2ec05f2b-7958-4711-8804-a7b47b31b71f)
+
+### This is enum with types of prefabs. 
+
+![image](https://github.com/iAmSidh108/DP_FlyweightPattern/assets/63715240/5db8c249-9565-4ef9-abcf-7d337f498a28)
+
+### Changed input settings for instation using Flyweight.
+
+![image](https://github.com/iAmSidh108/DP_FlyweightPattern/assets/63715240/4a69c977-769f-4643-959a-d664061f84b7)
+
+### I optimized it more by creating factory of flyweights and using Object pool.
+
+![image](https://github.com/iAmSidh108/DP_FlyweightPattern/assets/63715240/d55c4631-43d0-4db5-a134-02accaed20bc)
+
+### Here we can see that we created Object pool so that we can spawn and respawn prefabs again and again whenevr required. Also add the methods for objectpool into FlyweightSettings and make some changes in Input to spawn from Factory instead of Flyweight itself. To understand more about Object Pool and Factory pattern. See other repository for both of these patterns. 
+
+
+
